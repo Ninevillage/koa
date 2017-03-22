@@ -24,8 +24,21 @@
     "node": ">=7.6.0"
   },
   "scripts": {
+    "precommit": "npm run lint",
+    "commit": "git-cz",
+    "commitmsg": "conventional-changelog-lint -e",
     "compile": "rimraf lib && tsc",
+    "lint": "tslint src",
+    "lint:fix": "npm run lint -- --fix",
     "test": "nyc mocha"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
   },
   "nyc": {
     "include": [
@@ -49,9 +62,15 @@
     "koa": "^2.2.0"
   },
   "devDependencies": {
+    "@ninevillage/tslint-config-standard": "^1.1.0",
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.8",
     "@types/should": "^8.1.30",
+    "commitizen": "^2.9.6",
+    "conventional-changelog-lint": "^1.1.7",
+    "conventional-changelog-lint-config-angular": "^0.4.0",
+    "cz-customizable": "^4.0.0",
+    "husky": "^0.13.2",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
