@@ -59,5 +59,9 @@ typings/
 
 # build
 lib
-*.js
-*.js.map
+src/*.js
+src/*.js.map
+
+# editors
+.idea
+.vscode
