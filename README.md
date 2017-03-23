@@ -1,17 +1,17 @@
-# @ninevillage/koa
+# @ninevillage/koa-ts
 
-koa application starting point
+tools for working with koa and typescript
 
 ## installation
 
 ```bash
-$ npm install --save @ninevillage/koa
+$ npm install --save @ninevillage/koa-ts
 ```
 
 ## usage
 
 ```TypeScript
-import {KoaApplication} from '@ninevillage/koa'
+import {KoaApplication} from '@ninevillage/koa-ts'
 
 @KoaApplication
 export class Application {}
