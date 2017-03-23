@@ -1,7 +1,7 @@
 {
-  "name": "@ninevillage/koa",
+  "name": "@ninevillage/koa-ts",
   "version": "0.0.0",
-  "description": "Tools to work with koa",
+  "description": "tools for working with koa and typescript",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "typings": "./lib/index.d.ts",
@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ninevillage/koa.git"
+    "url": "git+https://github.com/ninevillage/koa-ts.git"
   },
-  "homepage": "https://github.com/ninevillage/koa",
+  "homepage": "https://github.com/ninevillage/koa-ts",
   "bugs": {
     "email": "info@ninevillage.com",
-    "url": "https://github.com/ninevillage/koa/issues"
+    "url": "https://github.com/ninevillage/koa-ts/issues"
   },
   "engines": {
     "node": ">=7.6.0"
